@@ -1,0 +1,101 @@
+<p>hello</p>
+
+
+<%#= form_for(@costumer) do |f| %>
+
+
+  <%#=f.fields_for :user do |builder| %>
+
+<!--    <div class="field">-->
+<!--      <%#= builder.label :name %><br />-->
+      <%#= builder.text_field :name, autofocus: true, autocomplete: "email" %>
+<!--    </div>-->
+
+<!--    <div class="field">-->
+<!--      <%#= builder.label :address %><br />-->
+      <%#= builder.text_field :address, autofocus: true, autocomplete: "email" %>
+<!--    </div>-->
+
+<!--    <div class="field">-->
+<!--      <%#= builder.label :mobile_number %><br />-->
+      <%#= builder.text_field :mobile_number, autofocus: true, autocomplete: "email" %>
+<!--    </div>-->
+
+
+<!--    <div class="field">-->
+<!--      <%#= builder.label :email %><br />-->
+      <%#= builder.email_field :email, autofocus: true, autocomplete: "email" %>
+<!--    </div>-->
+
+<!--    <div class="field">-->
+      <%#= builder.label :password %>
+      <%# if @minimum_password_length %>
+<!--        <em>(<%#= @minimum_password_length %> characters minimum)</em>-->
+<!--      <%# end %><br />-->
+      <%#= builder.password_field :password, autocomplete: "new-password" %>
+<!--    </div>-->
+
+<!--    <div class="field">-->
+<!--      <%#= builder.label :password_confirmation %><br />-->
+      <%#= builder.password_field :password_confirmation, autocomplete: "new-password" %>
+<!--    </div>-->
+
+  <%# end %>
+
+<!--  <div class="actions">-->
+    <%#= f.submit %>
+<!--  </div>-->
+<%# end %>
+
+
+
+
+
+
+
+  <%=form_for(@user,url: costumers_path) do |builder| %>
+
+    <div class="field">
+      <%= builder.label :name %><br />
+      <%= builder.text_field :name, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= builder.label :address %><br />
+      <%= builder.text_field :address, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= builder.label :mobile_number %><br />
+      <%= builder.text_field :mobile_number, autofocus: true, autocomplete: "email" %>
+    </div>
+
+
+    <div class="field">
+      <%= builder.label :email %><br />
+      <%= builder.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= builder.label :password %>
+      <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= builder.password_field :password, autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <%= builder.label :password_confirmation %><br />
+      <%= builder.password_field :password_confirmation, autocomplete: "new-password" %>
+    </div>
+
+
+
+  <div class="actions">
+    <%= builder.submit %>
+  </div>
+<% end %>
+
+
+
+

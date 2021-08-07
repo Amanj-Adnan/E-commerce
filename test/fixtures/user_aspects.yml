@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  belonges_to: MyString
+  : 
+  aspect: one
+  aspect_type: Aspect
+
+two:
+  belonges_to: MyString
+  : 
+  aspect: two
+  aspect_type: Aspect
