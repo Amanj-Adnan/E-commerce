@@ -6,4 +6,8 @@ class User < ApplicationRecord
 
   belongs_to :profileable, :polymorphic => true
   accepts_nested_attributes_for :profileable
+
+  def build_profileable(params)
+    self.profileable = profileable_type.constantize.new(params)
+  end
 end
