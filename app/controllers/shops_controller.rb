@@ -17,8 +17,7 @@ class ShopsController < ApplicationController
       # @user.build_profileable()
       @shop.save!
       @user.save!
-      sign_in @shop.user
-      redirect_to root_path
+      sign_in_and_redirect @user
     end
   end
 

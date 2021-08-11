@@ -49,8 +49,10 @@
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.35.3, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v3.0.0, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.9, ruby-3.0.1-p64) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="content_disposition (v1.0.0, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v4.8.0, ruby-3.0.1-p64) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="down (v5.2.3, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.15.3, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.5.2, ruby-3.0.1-p64) [gem]" level="application" />
@@ -88,6 +90,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v3.142.7, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="semantic_range (v3.0.0, ruby-3.0.1-p64) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="shrine (v3.4.0, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.0.2, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.2.2, ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tailwindcss-rails (v0.3.3, ruby-3.0.1-p64) [gem]" level="application" />

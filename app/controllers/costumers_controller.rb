@@ -15,9 +15,10 @@ class CostumersController < ApplicationController
     @user.profileable = @costumer
     @costumer.save!
      @user.save!
-    sign_in @user
-     redirect_to root_path
+     sign_in_and_redirect @user
      end
+
+
    end
 
 

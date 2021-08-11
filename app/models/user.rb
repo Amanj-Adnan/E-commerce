@@ -10,4 +10,7 @@ class User < ApplicationRecord
   def build_profileable(params)
     self.profileable = profileable_type.constantize.new(params)
   end
+
+  delegate_missing_to :@profileable
+
 end
