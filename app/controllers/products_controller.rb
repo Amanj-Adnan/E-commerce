@@ -2,6 +2,7 @@ class ProductsController < ApplicationController
  before_action :authenticate_user!
  # before_action :is_that_shop, only: [:index]
 
+
  def index
  @product= Product.all
  end
@@ -15,6 +16,7 @@ class ProductsController < ApplicationController
 
  def new
   @new_product = Product.new
+  authorize @user
  end
 
 
