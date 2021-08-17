@@ -7,18 +7,14 @@ class ProductsController < ApplicationController
  @product= Product.all
  end
 
-
  def show
 
  end
 
-
-
  def new
   @new_product = Product.new
-  authorize @user
+  authorize @new_product
  end
-
 
  def create
   @new_product = current_user.shop.products.new(get_params)
@@ -30,11 +26,9 @@ class ProductsController < ApplicationController
   end
  end
 
-
  def edit
 
  end
-
 
  def update
 
