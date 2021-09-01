@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
  end
 
  def create
-  @new_product = current_user.shop.products.new(get_params)
+  @new_product = current_user.profileable.products.new(get_params)
   if @new_product.save
 
    redirect_to root_path

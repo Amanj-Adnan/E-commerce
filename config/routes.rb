@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   root to: "home#index"
   get '/create_account', to: 'home#show'
-  devise_for :users , :skip => [:registrations]
+  devise_for :users, :skip => [:registrations], controllers: {
+    sessions: 'users/sessions'
+  }
   resources :costumers
   resources :shops
   resources :products

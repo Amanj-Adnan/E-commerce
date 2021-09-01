@@ -6,6 +6,9 @@ class ShopsController < ApplicationController
     @user.profileable = @shop
   end
 
+  def show
+
+  end
 
   def create
     ActiveRecord::Base.transaction do
@@ -21,6 +24,11 @@ class ShopsController < ApplicationController
     end
   end
 
+
+  # def destroy
+  #   @product.destroy
+  #   redirect_to root_path
+  # end
 
 
   private

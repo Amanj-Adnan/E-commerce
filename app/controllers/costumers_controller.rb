@@ -10,10 +10,10 @@ class CostumersController < ApplicationController
    def create
      ActiveRecord::Base.transaction do
      print(params)
-    @user = User.new(get_user)
-    @costumer = Costumer.new
-    @user.profileable = @costumer
-    @costumer.save!
+     @user = User.new(get_user)
+     @costumer = Costumer.new
+     @user.profileable = @costumer
+     @costumer.save!
      @user.save!
      sign_in_and_redirect @user
      end
